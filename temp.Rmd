@@ -1,0 +1,22 @@
+---
+title: "Untitled"
+author: "Priyanka"
+date: "08/09/2021"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+
+
+F_to_K <- function(temp_F) {
+    v_temp_K <- celsius_to_kelvin( #function1
+                fahrenheit_to_celsius( #function2
+                  temp_F
+                  ) #function2 ends
+                ) #function1 ends
+  return(v_temp_K)
+}
+```
+
